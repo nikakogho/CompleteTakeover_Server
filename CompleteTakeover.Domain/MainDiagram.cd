@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompleteTakeover.Domain.PlayerData">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAQABAAAAEAAAAABCQAAAAACAAAA=</HashCode>
+      <FileName>PlayerData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Colonies" />
+      <Property Name="Attacks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.BaseData">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABBAAAAIAgAAQAAAAEAAAEAAAAAAAAAIAAQAAQCA=</HashCode>
+      <FileName>BaseData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Buildings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.BuildingInstanceData">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAgIgAABAAgAAAAAAAEAAgABAAAAAAAAQIA=</HashCode>
+      <FileName>BuildingInstanceData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Base" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DestroyedInPlayerAttacks" />
+      <Property Name="DestroyedInAIAttacks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.AttackReport">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQEAgAAAgAAAAAAAAAAAAAAAQCAAAABACECAQAA=</HashCode>
+      <FileName>AttackReport.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Base" />
+      <Property Name="Attacker" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DeployedArmy" />
+      <Property Name="DestroyedBuildings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.ConstructionData">
+    <Position X="14.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAYoAABQAIAAAAAAAAAIAAAAAABAAAAQAA=</HashCode>
+      <FileName>ConstructionData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Upgrading" />
+      <Property Name="Base" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.DefenseReport">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAAAAAAgAAAAAAAQAAEAAAAAAABAAAAAACAQAA=</HashCode>
+      <FileName>DefenseReport.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Base" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DestroyedBuildings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.SquadData">
+    <Position X="5.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQAAAAAgAAAAAAAAACAAQAAEIIAAAAAAQAAAAA=</HashCode>
+      <FileName>SquadData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DeployedInAttack" />
+      <Property Name="DeployedInDefense" />
+      <Property Name="InArmyOfBase" />
+      <Property Name="StoredAtBunker" />
+      <Property Name="TrainingSlotAt" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.ArmyHolderData">
+    <Position X="9.25" Y="10.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\ArmyHolderData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.BunkerData">
+    <Position X="6.75" Y="10.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\BunkerData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="StoredUnits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.DecorationData">
+    <Position X="14.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\DecorationData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.LabData">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAACAEAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\LabData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.MainHallData">
+    <Position X="12.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\MainHallData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.MineData">
+    <Position X="9.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Buildings\MineData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.StorageData">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Buildings\StorageData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.TrainingZoneData">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAACAEIAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\TrainingZoneData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Slots" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.TrapData" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\TrapData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.TurretData" Collapsed="true">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\TurretData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompleteTakeover.Domain.Buildings.WallData" Collapsed="true">
+    <Position X="19" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\WallData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
